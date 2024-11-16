@@ -16,12 +16,16 @@ public class DSAController {
 	            summary = "Fetch all plants",
 	            description = "fetches all plant entities and their data from data source")
 	    @ApiResponses(value = {
-	            @ApiResponse(responseCode = "200", description = "successful operation")
+	            @ApiResponse(responseCode = "200", description = "successful operation"),
+	            @ApiResponse(responseCode = "300", description = "successful operation")
 	    })
+	 
 	    @GetMapping(value = "/all", produces = "application/json")
 	public String home() {
 		
 		return "Home";
 	}
+	 
+	 
 
 }
