@@ -4,11 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.demo.mongoModel.Catagories;
 import com.example.demo.service.MongoService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -16,12 +14,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 @RestController
-@RequestMapping("/data")
+@CrossOrigin
+
 public class Datacontroller {
 	
 	@Autowired
 	private MongoService mongoService;
-	
 	
 	@Operation(
             summary = "Fetch all Concepts",
