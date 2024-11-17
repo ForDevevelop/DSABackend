@@ -15,7 +15,7 @@ public class MongoService {
 	
 	public void fetch() {
 		mongoRepo.findAll();
-		System.out.println(mongoRepo.findAll()+"sucessfull-----------------> <-------------------");
+		System.out.println(mongoRepo.findAll());
 		
 	}
 
